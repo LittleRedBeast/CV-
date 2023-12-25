@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Righteous";
+    cursor: default;
+}
+
+.bigBroDiv {
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.bigBroDiv img {
+    width: 200px;
+}
+
+.bigBroDiv h2 {
+    position: relative;
+    top: 2vh;
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Righteous";
+}
+
+#leftArrow {
+    font-size: 40px;
+}
+
+.choiceDiv button {
+    font-size: 16px;
+}
+
+span {
+    vertical-align: bottom;
+}
+
+p {
+    display: inline-block;
+    font-size: 16px;
+}
+
+#email {
+    position: absolute;
+    bottom: -3vh;
+    left: -4vw;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- BUTTONS ლ(ಥ◡ಥლ) -------- */
+.bigBroDiv .choiceDiv {
+    text-align: center;
+    position: relative;
+}
+
+.bigBroDiv .choiceDiv button {
+    position: absolute;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 0 0 1px #0076ff, 0 0 5px #0076ff,  0 0 25px #0076ff;
+    box-shadow: 0 0 1px black, 0 0 5px #0076ff;
+    border: 1px solid black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: black;
+    padding: 17px 30px;
+    top: 8vh;
+    transform: translateX(-50%);
+    transition: text-shadow .5s, background-color .5s, color .5s, box-shadow .5s;
+}
+
+.bigBroDiv .choiceDiv button:hover {
+    color: red;
+    text-shadow: 0 0 1px red, 0 0 5px red,  0 0 25px red;
+    box-shadow: 0 0 1px black, 0 0 5px #0076ff, 0 0 7px #0a00ff, 0 0 9px #0012ff;
+}
+
+/* --- SKILLS BUTTON --- */
+#skills {
+    left: 14.3vw;
+    transition: text-shadow .5s, background-color .5s, color .5s, box-shadow .5s, left .5s, transform .5s;
+}
+
+
+/* --- INFOS BUTTON --- */
+#infos {
+    left: -11vw;
+    transform: scale(0.6);
+    cursor: pointer;
+    transition: text-shadow .5s, background-color .5s, color .5s, box-shadow .5s, left .5s, transform .5s;
+
+}
+
+/* --- WHY ME BUTTON --- */
+#whyMe {
+    width: 135px;
+    transform: scale(0.6);
+    right: -13vw;
+    transition: text-shadow .5s, background-color .5s, color .5s, box-shadow .5s, right .5s, transform .5s;
+}
+
+/* --- EXPERIENCES BUTTON --- */
+#experiences {
+    left: 27vw;
+    transform: scale(0);
+    transition: text-shadow .5s, background-color .5s, color .5s, box-shadow .5s, left .5s, transform .5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- BUTTON DESCRIPTIONS INFORMATIONS ------------- */
+.bigBoxDescriptions {
+    border: 1px solid blue;
+}
+
+/* --- SkillDescription --- */
+#skillDiv {
+    font-size: 0;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 1px blue, 0 0 2px cyan;
+    top: 48vh;
+    left: -12vw;
+    width: 50vw;
+    height: 19vh;
+    transform: scale(1);
+    transition: left .5s, transform .5s;
+}
+
+
+#skillDiv div {
+    cursor: default;
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 30px;
+} 
+
+#skillDiv div p, #skillDiv div span {
+    transition: color .5s;
+}
+
+#skillDiv div span:hover  {
+    color: red;
+}
+
+#skillDiv div p:hover {
+    color: cyan;
+}
+
+/* --- WhyMeDescription --- */
+#whyMeDiv {
+    font-size: 0;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 1px blue, 0 0 2px cyan;
+    top: 48vh;
+    left: 20vw;
+    width: 50vw;
+    height: 19vh;
+    transform: scale(0);
+    transition: left .5s, transform .5s;
+}
+
+#whyMeDiv div{
+    cursor: default;
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+#whyMeDiv div p, #whyMeDiv div span {
+    transition: color .5s;
+}
+
+#whyMeDiv div span:hover  {
+    color: red;
+}
+
+#whyMeDiv div p:hover {
+    color: cyan;
+}
+
+/* --- InfoDescription --- */
+#infoDiv {
+    font-size: 0;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 1px blue, 0 0 2px cyan;
+    top: 48vh;
+    left: 20vw;
+    width: 50vw;
+    height: 19vh;
+    transform: scale(0);
+    transition: left .5s, transform .5s;
+}
+
+#infoDiv div {
+    cursor: default;
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+#infoDiv div p, #infoDiv div span {
+    transition: color .5s;
+}
+
+#infoDiv div span:hover  {
+    color: red;
+}
+
+#infoDiv div p:hover {
+    color: cyan;
+}
+
+#infoDiv .email, #infoDiv .city {
+    display: flex;
+    width: 100%;
+    margin-top: 14px;
+}
+
+#infoDiv .email span, #infoDiv .email, #infoDiv .city {
+    margin-right: 10px;
+}
+
+/* --- ExperienceDescription --- */
+#experienceDiv {
+    font-size: 0;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 1px blue, 0 0 2px cyan;
+    top: 48vh;
+    left: 20vw;
+    width: 50vw;
+    height: 19vh;
+    transform: scale(0);
+    transition: left .5s, transform .5s;
+}
+
+#experienceDiv div {
+    cursor: default;
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+#experienceDiv div p, #experienceDiv div span {
+    transition: color .5s;
+}
+
+#experienceDiv div span:hover  {
+    color: red;
+}
+
+#experienceDiv div p:hover {
+    color: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- ARROWS ლ(ಥ◡ಥლ) -------- */
+.bigBroDiv .choiceDiv .arrows {
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    transform: scale();
+    transition: text-shadow .5s, color .5s, transform .5s;
+}
+
+.bigBroDiv .choiceDiv .arrows:hover {
+    transform: scale(1.5);
+    color: white;
+    text-shadow: 0 0 1px black, 0 0 2px blue, 0 0 3px #0a00ff, 0 0 4px #0012ff;
+}
+
+
+/* --- Left Arrow --- */
+.bigBroDiv .choiceDiv #leftArrow {
+    left: -20vw;
+    top: 9.5vh;
+}
+
+/* --- Right Arrow --- */
+.bigBroDiv .choiceDiv .rightArrowDiv {
+    transform: rotate(180deg) scale(1.2);
+    position: absolute;
+    right: -38vw;
+    top: 25.5vh;
+}
+
+.bigBroDiv .choiceDiv #rightArrow {
+    right: -20vw;
+    top: 9.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- BUTTONS EXPLAINS ------------ */
+
+/* --- SKILL EXPLAIN --- */
+#skillExplain {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 25px;
+    border: 1px solid black;
+    text-align: center;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+#skillExplain p {
+    margin-top: 6px;
+}
+
+/* --- WHYME EXPLAIN --- */
+
+#whyMeExplain {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 25px;
+    margin-top: 25px;
+    border: 1px solid black;
+    text-align: center;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+#whyMeExplain p {
+    margin-top: 6px;
+}
+
+
+/* --- EXPERIENCE EXPLAIN --- */
+#experiencesExplain {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 25px;
+    margin-top: 25px;
+    border: 1px solid black;
+    text-align: center;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+#experiencesExplain p {
+    margin-top: 8px;
+}
+
+/* --- INFOS EXPLAIN --- */
+#infoExplain {
+    margin-top: 25px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+#infoExplain p {
+    margin-top: 8px;
+}
+
